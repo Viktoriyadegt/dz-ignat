@@ -1,0 +1,19 @@
+.button {
+    margin: 10px;
+    width: 60px;
+    background: #181ab0 ;
+    color: #61dafb;
+    outline: none;
+}
+.button:focus {
+    outline: hotpink solid 1px;
+}
+
+.affair {
+    display: flex;
+}
+.item {
+    margin: 10px;
+    width: 100px;
+    color: #61dafb;
+}
