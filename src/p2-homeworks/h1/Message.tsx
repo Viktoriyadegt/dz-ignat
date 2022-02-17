@@ -9,7 +9,6 @@ export type MessagePropsType = {
 }
 
 function Message(props: MessagePropsType) {
-    debugger
     return (
         <div className={s.message}>
             <img src={props.avatar} alt={"avatar"} className={s.avatar}/>

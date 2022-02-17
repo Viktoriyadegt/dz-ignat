@@ -4,7 +4,7 @@ import s from './App.module.css'
 import HW5 from "../../../p2-homeworks/h5/HW5";
 
 function App() {
-    debugger
+
     return (
         <div className={s.App}>
             <div>react homeworks:</div>
