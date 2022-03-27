@@ -1,0 +1,10 @@
+
+.people {
+    display: flex;
+}
+
+.people_div {
+    margin: 10px;
+    width: 100px;
+    color: #61dafb;
+}
