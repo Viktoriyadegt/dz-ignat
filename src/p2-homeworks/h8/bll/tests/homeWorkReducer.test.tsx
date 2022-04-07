@@ -19,11 +19,16 @@ test('sort name up', () => {
     const newState = homeWorkReducer(initialState, {type: 'sort', payload: 'up'})
 
     console.log(newState)
-    expect(newState[0].name).toBe('Александр')
+    //expect(newState[0].name).toBe('Александр')
+   // expect(newState[0]._id).toBe(1)
+    const result = [1, 3, 4, 5, 2, 0].filter((f, i)=>f === newState[i]._id)
+    expect(result.length).toBe(newState.length)
+
 })
 test('sort name down', () => {
     const newState = homeWorkReducer(initialState, {type: 'sort', payload: 'down'})
     expect(newState[0].name).toBe('Кот')
+    expect(newState[0]._id).toBe(0)
 
 })
 test('check age 18', () => {

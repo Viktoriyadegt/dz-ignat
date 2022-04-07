@@ -12,13 +12,13 @@ export const homeWorkReducer = (state: Array<UserType>, action: ActionsType): Ar
                 return [...state.sort((a, b) => a.name <= b.name ? -1 : 1)]
             }
             else if (action.payload === 'down') {
-                return [...state.sort((a, b) => b.name <= b.name ? -1 : 1)]
+                return [...state.sort((a, b) => b.name <= a.name ? -1 : 1)]
             }
             return state
         }
         case 'check': {
             // need to fix
-            return state.filter(f=>f.age>action.payload - 1)
+            return state.filter(f=>f.age >= action.payload - 1)
         }
         default:
             return state
