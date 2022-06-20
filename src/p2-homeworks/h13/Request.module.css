@@ -1,0 +1,15 @@
+.checked{
+    margin-left: 30px;
+    margin-top: 40px;
+
+}
+.button {
+    border-bottom: 1px solid blue;
+    padding: 20px;
+}
+
+.answer {
+    color: #0c0d81;
+    padding: 20px;
+    font-size: 40px;
+}

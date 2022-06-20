@@ -6,7 +6,6 @@ import { NavLink } from 'react-router-dom';
 
 
 function Header() {
-    debugger
     return (
         <div className={s.header } >
             <NavLink to={PATH.PRE_JUNIOR} className={({isActive}) => `${s.link} ${isActive ? s.active : ""}`}>pre-junior</NavLink>

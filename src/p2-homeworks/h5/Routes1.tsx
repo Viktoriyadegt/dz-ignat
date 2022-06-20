@@ -14,7 +14,6 @@ export const PATH = {
 }
 
 function Routes1() {
-    debugger
     return (
         <div>
             {/*Switch выбирает первый подходящий роут*/}

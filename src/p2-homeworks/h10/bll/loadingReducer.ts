@@ -1,3 +1,4 @@
+import {AppActionsType} from "./store";
 
 export type InitialStateType = typeof initState
 
@@ -19,5 +20,5 @@ export const loadingReducer = (state= initState, action: LoadingACType): Initial
     }
 }
 
-type LoadingACType = ReturnType<typeof loadingAC>
+export type LoadingACType = ReturnType<typeof loadingAC>
 export const loadingAC = (isLoading:boolean) => ( {type:'IS-LOADING', isLoading,} as const) // fix any

@@ -1,4 +1,5 @@
 import {ThemeType} from "../HW12";
+import {AppActionsType} from "../../h10/bll/store";
 
 type InitStateType = typeof initState
 const initState = {
@@ -17,5 +18,5 @@ export const themeReducer = (state = initState, action: changeThemeCType): InitS
 };
 
 
-type changeThemeCType = ReturnType<typeof changeThemeC>
+export type changeThemeCType = ReturnType<typeof changeThemeC>
 export const changeThemeC = (theme: ThemeType) => ({type: 'CHANGE_THEME', theme,} as const); // fix any
